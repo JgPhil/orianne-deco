@@ -1,33 +1,36 @@
-import React from 'react'
+import React from 'react';
 import './Slider.css';
 
 const Slider = props => {
-    return <div id="carousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel" data-slide-to="1"></li>
-            <li data-target="#carousel" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="d-block w-100" src="images/img-1.jpg" alt="First slide" />
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="images/img-2.jpg" alt="Second slide" />
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="images/img-3.jpg" alt="Third slide" />
-            </div>
+  return (
+    <div id="carousel" className="carousel slide" data-ride="carousel">
+      <ol className="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" className="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+      </ol>
+      <div className="carousel-inner">
+        <div className="carousel-item active">
+          <img className="d-block w-100" src="images/img-1.jpg" alt="First slide" />
         </div>
-        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+        <div className="carousel-item">
+          <img className="d-block w-100" src="images/img-2.jpg" alt="Second slide" />
+        </div>
+        <div className="carousel-item">
+          <img className="d-block w-100" src="images/img-3.jpg" alt="Third slide" />
+        </div>
+      </div>
+      <a className="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span className="sr-only">Previous</span>
+      </a>
+      <a className="carousel-control-next" href="#carousel" role="button" data-slide="next">
+        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+        <span className="sr-only">Next</span>
+      </a>
     </div>
-}
+  );
+};
 
-export default Slider
+export default Slider;
+

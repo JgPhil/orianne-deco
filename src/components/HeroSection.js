@@ -1,27 +1,33 @@
 import React from 'react';
 import '../App.css';
 import { Button } from './Button';
+import { Link } from 'react-router-dom';
 import './HeroSection.css';
 import ScrollDownButton from './ScrollDownButton';
 
 function HeroSection() {
   return (
-    <header className='jumbotron'>
-      <div class="container">
+    <div className="jumbotron">
+      <div className="container">
+        <img src="images/logo2.png" alt="" className="logo-or" />
         <h1>Créatrice de décors personnalisés</h1>
-        <div className='hero-btns'>
-          <Button
-            className='btns'
-            buttonStyle='btn--outline'
-            buttonSize='btn--medium'
-          >
-            Contact
-          </Button>
-          <ScrollDownButton/>
+        <div className="hero-btns">
+          <Link to="/interieur">
+            <Button className="btns" buttonStyle="btn--outline" buttonSize="btn--medium">
+              Decoration d'intérieur
+            </Button>
+          </Link>
+          <Link to="/mariage">
+            <Button className="btns" buttonStyle="btn--outline" buttonSize="btn--medium">
+              Mariage
+            </Button>
+          </Link>
+          <ScrollDownButton />
         </div>
       </div>
-    </header>
+    </div>
   );
 }
 
 export default HeroSection;
+

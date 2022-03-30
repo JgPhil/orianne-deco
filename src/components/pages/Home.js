@@ -8,11 +8,12 @@ import Slider from '../Slider';
 function Home() {
   return (
     <>
-      {/* <HeroSection /> */}
-      <Slider/>
+      <HeroSection />
+      <Slider />
       <Footer />
     </>
   );
 }
 
 export default Home;
+

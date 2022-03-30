@@ -5,31 +5,21 @@ import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
-    <div className='footer-container'>
-      <section class='social-media'>
-        <div class='social-media-wrap'>
-          <div class='footer-logo'>
-            <Link to='/' className='social-logo'>
-              <img src='images/logo2png.png' width="80" height="70" className="d-inline-block align-top" alt="" />
+    <div className="footer-container">
+      <section className="social-media">
+        <div className="social-media-wrap">
+          <div className="footer-logo">
+            <Link to="/" className="social-logo">
+              <img src="images/logo2png.png" width="80" height="70" className="d-inline-block align-top" alt="" />
             </Link>
           </div>
-          <small class='website-rights'>orianne decoratrice © 2022</small>
-          <div class='social-icons'>
-            <Link
-              class='social-icon-link instagram'
-              to='/'
-              target='_blank'
-              aria-label='Instagram'
-            >
-              <i class='fab fa-instagram' />
+          <small className="website-rights">orianne decoratrice © 2022</small>
+          <div className="social-icons">
+            <Link className="social-icon-link instagram" to="/" target="_blank" aria-label="Instagram">
+              <i className="fab fa-instagram" />
             </Link>
-            <Link
-              class='social-icon-link twitter'
-              to='/'
-              target='_blank'
-              aria-label='LinkedIn'
-            >
-              <i class='fab fa-linkedin' />
+            <Link className="social-icon-link twitter" to="/" target="_blank" aria-label="LinkedIn">
+              <i className="fab fa-linkedin" />
             </Link>
           </div>
         </div>
@@ -39,3 +29,4 @@ function Footer() {
 }
 
 export default Footer;
+

@@ -26,55 +26,42 @@ function Navbar() {
 
   return (
     <>
-      <nav className='navbar navbar-expand navbar-light  flex-column'>
-        <Link to='/' onClick={closeMobileMenu} className="navbar-brand mx-auto pt-4">
-          <img src='images/logo2png.png' width="180" height="150" className="d-inline-block" alt="" />
-        </Link>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse flex-shrink-1">
-          <ul className='navbar-nav' >
-            <li className='nav-item ml-2 mr-3'>
-              <Link
-                to='/'
-                className='nav-link'
-                onClick={closeMobileMenu}>
+      <nav className="navbar navbar-expand-md navbar-light bg-light">
+        <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <Link to="/" onClick={closeMobileMenu} className="navbar-brand brand-text">
+            {/*  <img src="images/logo2png.png" width="100px" className="d-inline-block" alt="" /> */}
+            Orianne Decoratrice
+          </Link>
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item active">
+              <Link to="/" className="nav-link" onClick={closeMobileMenu}>
                 Accueil
               </Link>
             </li>
-            <li className='nav-item mr-3'>
-              <Link
-                to='/mariage'
-                className='nav-link'
-                onClick={closeMobileMenu}
-              >
+            <li className="nav-item">
+              <Link to="/mariage" className="nav-link" onClick={closeMobileMenu}>
                 Mariage
               </Link>
             </li>
-            <li className='nav-item mr-3'>
-              <Link
-                to='/decoration'
-                className='nav-link'
-                onClick={closeMobileMenu}
-              >
-                Decoration
+            <li className="nav-item">
+              <Link to="/interieur" className="nav-link" onClick={closeMobileMenu}>
+                Intérieur
               </Link>
             </li>
-            <li className='nav-item mr-2'>
-              <Link
-                to='/contact'
-                className='nav-link'
-                onClick={closeMobileMenu}
-              >
+            <li className="nav-item">
+              <Link to="/contact" className="nav-link" onClick={closeMobileMenu}>
                 Contact
               </Link>
             </li>
           </ul>
         </div>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+          <span className="navbar-toggler-icon"></span>
+        </button>
       </nav>
     </>
   );
 }
 
 export default Navbar;
+
