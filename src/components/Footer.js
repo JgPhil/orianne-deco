@@ -10,7 +10,7 @@ function Footer() {
         <div className="social-media-wrap">
           <div className="footer-logo">
             <Link to="/" className="social-logo">
-              <img src="images/logo2png.png" width="80" height="70" className="d-inline-block align-top" alt="" />
+              <img src="images/logo2.png" width="80" height="70" className="d-inline-block align-top" alt="" />
             </Link>
           </div>
           <small className="website-rights">orianne decoratrice © 2022</small>
