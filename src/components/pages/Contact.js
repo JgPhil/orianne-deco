@@ -9,7 +9,10 @@ const Contact = props => {
           <h1>Contactez-nous</h1>
         </header>
         <div className="row" style={{ height: '300px' }}>
-          <div className="col d-flex"></div>
+          <div className="col d-flex">
+            <h5>Orianne Décoratrice</h5>
+            <p>Activités spéciales de design</p>
+          </div>
           <div className="col d-flex"></div>
         </div>
       </div>
