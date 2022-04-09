@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import './App.css';
 import Home from './components/pages/Home';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Contact from './components/pages/Contact';
 import Mariage from './components/pages/Mariage';
 import Interieur from './components/pages/Interieur';
@@ -10,15 +10,15 @@ import Interieur from './components/pages/Interieur';
 function App() {
   return (
     <>
-      <Router>
+      <BrowserRouter>
         <Navbar />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/mariage" component={Mariage} />
-          <Route path="/interieur" component={Interieur} />
-          <Route path="/contact" component={Contact} />
-        </Switch>
-      </Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/mariage" element={<Mariage />} />
+          <Route path="/interieur" element={<Interieur />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

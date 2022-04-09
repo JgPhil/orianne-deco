@@ -12,14 +12,14 @@ function HeroSection() {
         <img src="images/logo2.png" alt="" className="logo-or" />
         <h1>Créatrice de décors personnalisés</h1>
         <div className="hero-btns">
-          <Link to="/interieur">
-            <Button className="btns" buttonStyle="btn--outline" buttonSize="btn--medium">
-              Decoration d'intérieur
-            </Button>
-          </Link>
           <Link to="/mariage">
             <Button className="btns" buttonStyle="btn--outline" buttonSize="btn--medium">
               Mariage
+            </Button>
+          </Link>
+          <Link to="/interieur">
+            <Button className="btns" buttonStyle="btn--outline" buttonSize="btn--medium">
+              Relooking
             </Button>
           </Link>
           <ScrollDownButton />

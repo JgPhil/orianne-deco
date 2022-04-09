@@ -21,7 +21,12 @@
 
 p{
   font-family: 'brandon';
- 
+  white-space: pre-line;
+}
+
+.section-text {
+  margin-top: 20px;
+  margin-bottom: 80px;
 }
 
 .section-title{
@@ -30,10 +35,11 @@ p{
   justify-content: center;
   align-items: center;
   text-align: center;
-  min-height: 350px;
+  min-height: 280px;
   padding: 32px 80px 40px;
   background-color: rgb(247, 239, 233);
   margin-bottom: 50px;
+  margin-top: 20px;
 }
 
 .inner-section {
