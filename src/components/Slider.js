@@ -1,7 +1,9 @@
 import React from 'react';
 import './Slider.css';
+import { MARIAGE_PICS } from '..';
 
 const Slider = props => {
+  console.log(MARIAGE_PICS)
   return (
     <div id="carousel" className="carousel slide" data-ride="carousel">
       <ol className="carousel-indicators">
@@ -11,13 +13,13 @@ const Slider = props => {
       </ol>
       <div className="carousel-inner">
         <div className="carousel-item active">
-          <img className="d-block w-100" src="images/img-1.jpg" alt="First slide" />
+          <img className="d-block w-100" src="images/italie.jpg" alt="First slide" />
         </div>
         <div className="carousel-item">
-          <img className="d-block w-100" src="images/img-2.jpg" alt="Second slide" />
+          <img className="d-block w-100" src="images/2855.jpg" alt="Second slide" />
         </div>
         <div className="carousel-item">
-          <img className="d-block w-100" src="images/img-3.jpg" alt="Third slide" />
+          <img className="d-block w-100" src="images/2864.jpg" alt="Third slide" />
         </div>
       </div>
       <a className="carousel-control-prev" href="#carousel" role="button" data-slide="prev">

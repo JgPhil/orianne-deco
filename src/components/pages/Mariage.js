@@ -22,7 +22,7 @@ const Mariage = () => {
             extérieur
           </li>
         </ul>
-        <Slider />
+        <Slider category='mariage'/>
         <Footer />
       </div>
     </>
