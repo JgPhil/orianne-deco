@@ -6,10 +6,11 @@ import Footer from '../Footer';
 import Slider from '../Slider';
 
 function Home() {
+  const images = ['2', '3', '10', '13'];
   return (
     <>
       <HeroSection />
-      <Slider />
+      <Slider category="mariage" pics={images} />
       <Footer />
     </>
   );

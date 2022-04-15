@@ -29,8 +29,7 @@ function Navbar() {
       <nav className="navbar navbar-expand-md navbar-light bg-light">
         <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
           <Link to="/" onClick={closeMobileMenu} className="navbar-brand brand-text">
-            {/*  <img src="images/logo2png.png" width="100px" className="d-inline-block" alt="" /> */}
-            Orianne Decoratrice
+            <img src="images/leaf.png" width="85px" className="d-inline-block" alt="" />
           </Link>
           <ul className="navbar-nav ml-auto">
             <li className="nav-item active">
@@ -55,7 +54,12 @@ function Navbar() {
             </li>
           </ul>
         </div>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+        >
           <span className="navbar-toggler-icon"></span>
         </button>
       </nav>

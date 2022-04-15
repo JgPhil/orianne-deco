@@ -3,14 +3,14 @@ import Footer from '../Footer';
 import Slider from '../Slider';
 
 const Interieur = () => {
+  const images = ['2855', '2858', '2864'];
   return (
     <>
-      <div className="container">
+      <div className="container" style={{ marginBottom: '84px' }}>
         <header className="section-title font-italic ">
           <h1 className="display-4">Décoration d'intérieur</h1>
         </header>
         <div className="section-text">
-          <div className="section-sub-title font-italic"></div>
           <div className="inner-section">
             <div className="section-sub-title font-italic">
               <h4>Relooker votre décoration</h4>
@@ -35,9 +35,9 @@ const Interieur = () => {
             <p>Des idées pour aménager un intérieur pratique et agréable</p>
           </div>
         </div>
-        <Slider />
-        <Footer />
+        <Slider category="interieur" pics={images} />
       </div>
+      <Footer />
     </>
   );
 };

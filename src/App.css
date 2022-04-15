@@ -32,12 +32,13 @@ p{
 .section-title{
   font-family: 'didot';
   display: flex;
+  font-weight: bolder;
   justify-content: center;
   align-items: center;
   text-align: center;
   min-height: 280px;
   padding: 32px 80px 40px;
-  background-color: rgb(247, 239, 233);
+  background-color: rgb(237, 218, 203);
   margin-bottom: 50px;
   margin-top: 20px;
 }
@@ -50,6 +51,7 @@ p{
 .section-sub-title{
   font-family: 'didot';
 }
+
 
 .divider{
   width: 100%;
