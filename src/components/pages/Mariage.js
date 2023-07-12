@@ -6,11 +6,10 @@ const Mariage = () => {
   const images = [
     'champ',
     'hochberg',
-    'bohemerouge',
     'italie',
     '1',
     '2',
-    '3',
+    //'3',
     '4',
     '5',
     '6',
@@ -20,7 +19,8 @@ const Mariage = () => {
     '10',
     '11',
     '12',
-    '13',
+   // '13',
+   "2_champ2", "2_cheese","2_print", "2_tent", "2_tent2", "2_vint",
     '14',
   ];
   return (

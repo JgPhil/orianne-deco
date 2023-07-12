@@ -6,7 +6,7 @@ import Footer from '../Footer';
 import Slider from '../Slider';
 
 function Home() {
-  const images = ['2', '3', '10', '13'];
+  const images = ['2', '3', '10',"2_champ2", "2_cheese","2_print", "2_tent", "2_tent2", "2_vint"];
   return (
     <>
       <HeroSection />
