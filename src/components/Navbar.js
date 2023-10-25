@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 
 function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
+  const location = useLocation();
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -22,35 +23,59 @@ function Navbar() {
     showButton();
   }, []);
 
+  const checkPath = path => {
+    return location.pathname === path ? ' active' : '';
+  };
+
   window.addEventListener('resize', showButton);
 
   return (
     <>
       <nav className="navbar navbar-expand-md navbar-light bg-light">
-        <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <Link to="/" onClick={closeMobileMenu} className="navbar-brand brand-text">
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <Link to="/" onClick={closeMobileMenu} className="navbar-brand brand-text is-nav-leaf">
             <img src="images/leaf.png" width="85px" className="d-inline-block" alt="" />
           </Link>
-          <ul className="navbar-nav ml-auto">
-            <li className="nav-item active">
-              <Link to="/" className="nav-link" onClick={closeMobileMenu}>
+          <ul className="navbar-nav is-nav">
+            <li className={'nav-item'}>
+              {/* <Button className="btns" buttonStyle={'btn--outline'} buttonSize={'btn--small'}> */}
+              <Link to="/" className={'nav-link' + checkPath('/')} onClick={closeMobileMenu}>
                 Accueil
               </Link>
+              {/* </Button> */}
             </li>
-            <li className="nav-item">
-              <Link to="/mariage" className="nav-link" onClick={closeMobileMenu}>
+            <li className={'nav-item'}>
+              {/* <Button className="btns" buttonStyle={'btn--outline'} buttonSize={'btn--small'}> */}
+              <Link
+                to="/mariage"
+                className={'nav-link' + checkPath('/mariage')}
+                onClick={closeMobileMenu}
+              >
                 Mariage
               </Link>
+              {/* </Button> */}
             </li>
-            <li className="nav-item">
-              <Link to="/interieur" className="nav-link" onClick={closeMobileMenu}>
+            <li className={'nav-item'}>
+              {/* <Button className="btns" buttonStyle={'btn--outline'} buttonSize={'btn--small'}> */}
+              <Link
+                to="/interieur"
+                className={'nav-link' + checkPath('/interieur')}
+                onClick={closeMobileMenu}
+              >
                 Intérieur
               </Link>
+              {/* </Button> */}
             </li>
-            <li className="nav-item">
-              <Link to="/contact" className="nav-link" onClick={closeMobileMenu}>
+            <li className={'nav-item'}>
+              {/* <Button className="btns" buttonStyle={'btn--outline'} buttonSize={'btn--small'}> */}
+              <Link
+                to="/contact"
+                className={'nav-link' + checkPath('/contact')}
+                onClick={closeMobileMenu}
+              >
                 Contact
               </Link>
+              {/* </Button> */}
             </li>
           </ul>
         </div>
@@ -62,6 +87,7 @@ function Navbar() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
+        <div className="navbar-title">Orianne Décoratrice</div>
       </nav>
     </>
   );

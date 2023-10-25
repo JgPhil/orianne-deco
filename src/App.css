@@ -1,3 +1,5 @@
+@import './components/index.css';
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,8 +20,7 @@
   font-size: 3rem;
 }
 
-
-p{
+p {
   font-family: 'brandon';
   white-space: pre-line;
 }
@@ -29,7 +30,7 @@ p{
   margin-bottom: 80px;
 }
 
-.section-title{
+.section-title {
   font-family: 'didot';
   display: flex;
   font-weight: bolder;
@@ -48,15 +49,14 @@ p{
   margin-bottom: 30px;
 }
 
-.section-sub-title{
+.section-sub-title {
   font-family: 'didot';
 }
 
-
-.divider{
+.divider {
   width: 100%;
   border-bottom-style: solid;
-  border-bottom-color: #D3B884;
+  border-bottom-color: #d3b884;
   border-bottom-width: 1px;
   margin-bottom: 32px;
 }
@@ -78,3 +78,12 @@ p{
   color: #fff;
   font-size: 100px;
 }
+
+@font-face {
+  font-family: 'serengetti_itcregular';
+  src: url('/serengetti_itc_regular-webfont.woff2') format('woff2'),
+    url('/serengetti_itc_regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+

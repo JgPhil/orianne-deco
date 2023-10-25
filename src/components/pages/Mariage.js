@@ -1,6 +1,7 @@
 import React from 'react';
 import Footer from '../Footer';
 import Slider from '../Slider';
+import VideoPlayer from '../VideoPlayer';
 
 const Mariage = () => {
   const images = [
@@ -19,8 +20,13 @@ const Mariage = () => {
     '10',
     '11',
     '12',
-   // '13',
-   "2_champ2", "2_cheese","2_print", "2_tent", "2_tent2", "2_vint",
+    // '13',
+    '2_champ2',
+    '2_cheese',
+    '2_print',
+    '2_tent',
+    '2_tent2',
+    '2_vint',
     '14',
   ];
   return (
@@ -42,19 +48,15 @@ const Mariage = () => {
           </div>
           <div className="divider" />
           <div className="inner-section">
-            <p className="lead">
+            <div className="lead">
               Pour une belle harmonie Orianne Décoratrice réalise également des décors
               complémentaires : <br />
-              <ul>
-                <ol>Bouquet de mariée en harmonie avec votre robe</ol>
-                <ol> Boutonnière du marié assortie</ol>
-                <ol>Housses de chaises en tissu blanc</ol>
-                <ol>
-                  Arches décorée - Décors floraux pour la cérémonie - Décors pour les buffets du vin
-                  d'honneur et cérémonie en extérieur
-                </ol>
-              </ul>
-            </p>
+              Bouquet de mariée en harmonie avec votre robe <br />
+              Boutonnière du marié assortie <br />
+              Housses de chaises en tissu blanc <br />
+              Arche décorée - Décors floraux pour la cérémonie - Décors pour les buffets du vin
+              d'honneur et cérémonie en extérieur
+            </div>
           </div>
         </div>
         <Slider category="mariage" pics={images} />

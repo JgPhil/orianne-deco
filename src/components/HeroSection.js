@@ -4,26 +4,19 @@ import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './HeroSection.css';
 import ScrollDownButton from './ScrollDownButton';
+import VideoPlayer from './VideoPlayer';
+import HeroButtons from './HeroButtons';
 
 function HeroSection() {
   return (
     <div className="jumbotron">
       <div className="container">
-        <img src="images/logo2.png" alt="" className="logo-or" />
+        <br />
+        <VideoPlayer />
+        <br />
+        {/* <img src="images/logo2.png" alt="logo" className="hero-logo" /> */}
         <h1>Créatrice de décors personnalisés</h1>
-        <div className="hero-btns">
-          <Link to="/mariage">
-            <Button className="btns" buttonStyle="btn--outline" buttonSize="btn--medium">
-              Mariage
-            </Button>
-          </Link>
-          <Link to="/interieur">
-            <Button className="btns" buttonStyle="btn--outline" buttonSize="btn--medium">
-              Relooking
-            </Button>
-          </Link>
-          <ScrollDownButton />
-        </div>
+        <HeroButtons />
       </div>
     </div>
   );

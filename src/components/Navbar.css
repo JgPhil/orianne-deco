@@ -1,5 +1,19 @@
 .brand-text {
-  color: rgba(0,0,0,0.5)!important;
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.navbar-title {
+  font-family: 'serengetti_itcregular';
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.5);
+  margin-right: auto;
+  margin-left: 1.5rem;
+}
+
+.navbar ul {
+  /* position: absolute; */
+  /* left: 50%;
+  transform: translateX(-50%); */
 }
 
 /* .navbar {
@@ -179,3 +193,4 @@ a.navbar-brand {
   }
 }
  */
+
