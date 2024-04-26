@@ -16,7 +16,7 @@ const ContactForm = () => {
 
   // Function that displays a success toast on bottom right of the page when form submission is successful
   const toastifySuccess = () => {
-    toast('Form sent!', {
+    toast('Formulaire envoyé !', {
       position: 'bottom-right',
       autoClose: 5000,
       hideProgressBar: true,
@@ -51,6 +51,7 @@ const ContactForm = () => {
         templateParams,
         process.env.REACT_APP_USER_ID
       );
+
 
       // Reset contact form fields after submission
       reset();
